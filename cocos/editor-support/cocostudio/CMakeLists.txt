@@ -43,6 +43,8 @@ add_library(cocostudio STATIC
 )
 
 target_link_libraries(cocostudio
+  gui
+  audio
   jsoncpp
 )
 

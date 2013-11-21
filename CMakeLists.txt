@@ -10,7 +10,7 @@ include(build/BuildHelpers.CMakeLists.txt)
 option(USE_CHIPMUNK "Use chipmunk for physics library" ON)
 option(USE_BOX2D "Use box2d for physics library" OFF)
 option(DEBUG_MODE "Debug or release?" ON)
-option(BUILD_LIBS_LUA "Build lua libraries" ON)
+option(BUILD_LIBS_LUA "Build lua libraries" OFF)
 option(BUILD_GUI "Build GUI library" ON)
 option(BUILD_NETWORK "Build network library" ON)
 option(BUILD_EXTENSIONS "Build extension library" ON)
@@ -21,8 +21,8 @@ option(BUILD_EDITOR_COCOSBUILDER "Build editor support for cocosbuilder" ON)
 
 option(BUILD_HelloCpp "Only build HelloCpp sample" ON)
 option(BUILD_TestCpp "Only build TestCpp sample" ON)
-option(BUILD_HelloLua "Only build HelloLua sample" ON)
-option(BUILD_TestLua "Only build TestLua sample" ON)
+option(BUILD_HelloLua "Only build HelloLua sample" OFF)
+option(BUILD_TestLua "Only build TestLua sample" OFF)
 
 
 if(DEBUG_MODE)
@@ -162,3 +162,5 @@ endif(BUILD_LIBS_LUA)
 
 # build samples
 add_subdirectory(samples)
+
+add_subdirectory(projects/test)

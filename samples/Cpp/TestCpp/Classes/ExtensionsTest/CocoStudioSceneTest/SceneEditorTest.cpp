@@ -67,6 +67,7 @@ cocos2d::Node* SceneEditorTestLayer::createGameScene()
     Node *pNode = SceneReader::getInstance()->createNodeWithSceneFile("scenetest/FishJoy2.json");
 	if (pNode == nullptr)
 	{
+
 		return nullptr;
 	}
 	_curNode = pNode;
