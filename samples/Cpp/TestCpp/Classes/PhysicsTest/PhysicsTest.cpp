@@ -1,8 +1,9 @@
 #include "PhysicsTest.h"
 #include <cmath>
 #include "../testResource.h"
-USING_NS_CC;
 
+USING_NS_CC;
+int __fdelt_chk = 0;
 namespace
 {
     static std::function<Layer*()> createFunctions[] = {
@@ -73,7 +74,7 @@ void PhysicsTestScene::runThisTest()
 void PhysicsTestScene::toggleDebug()
 {
     _debugDraw = !_debugDraw;
-    getPhysicsWorld()->setDebugDrawMask(_debugDraw ? PhysicsWorld::DEBUGDRAW_ALL : PhysicsWorld::DEBUGDRAW_NONE);
+    // getPhysicsWorld()->setDebugDrawMask(_debugDraw ? ::PhysicsWorld::DEBUGDRAW_ALL : ::PhysicsWorld::DEBUGDRAW_NONE);
 }
 
 PhysicsDemo::PhysicsDemo()

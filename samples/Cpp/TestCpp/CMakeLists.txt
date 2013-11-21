@@ -150,8 +150,8 @@ target_link_libraries(${APP_NAME}
   cocosbuilder
   extensions
   audio
-  cocos2d
   box2d
+  cocos2d
 )
 
 set(APP_BIN_DIR "${CMAKE_SOURCE_DIR}/bin/${APP_NAME}")
